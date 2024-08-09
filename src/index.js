@@ -9,8 +9,8 @@ app.use(express.urlencoded({ extended: false }));
 
 
 // Connect to DATABASE
-const DATABASE_URL = "mongodb+srv://jerinr050:jerin@project.8d5tx.mongodb.net/?retryWrites=true&w=majority&appName=project";
-mongoose.connect(DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
+const DATABASEURL = "mongodb+srv://jerinr050:jerin@project.8d5tx.mongodb.net/?retryWrites=true&w=majority&appName=project";
+mongoose.connect(DATABASEURL,{ useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection
 db.on('error', (err) => console.log(err))
 db.once('open', () => console.log('connected to database'))
