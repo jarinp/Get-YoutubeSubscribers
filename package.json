@@ -1,17 +1,20 @@
 {
   "name": "youtubesubscribers",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A project to manage YouTube subscribers.",
+  "main": "src/index.js",
   "scripts": {
-    "build": "echo 'Build step not necessary'",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "echo 'No tests specified' && exit 0",
+    "lint": "eslint src"
   },
   "keywords": [],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.5.2"
+  
   }
 }
